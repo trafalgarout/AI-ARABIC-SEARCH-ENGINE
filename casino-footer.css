@@ -1,0 +1,434 @@
+/* Casino-style Footer based on the image */
+
+.footer {
+    position: relative;
+    background: #4A148C;
+    color: #fff;
+    overflow: hidden;
+    z-index: 1;
+    padding: 0;
+    font-family: 'Amiri', Arial, sans-serif;
+    border-top: 1px solid #6a1b9a;
+}
+
+/* Site Links Section */
+.site-links-section {
+    padding: 25px 0;
+    border-bottom: 1px solid #6a1b9a;
+}
+
+.site-links-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 20px;
+}
+
+.site-links-title {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.site-links-column {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+    min-width: 150px;
+}
+
+.site-links-column h3 {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+    visibility: hidden;
+    height: 0;
+}
+
+.site-links-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-links-column ul li {
+    margin-bottom: 10px;
+}
+
+.site-links-column ul li a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.site-links-column ul li a:hover {
+    color: #fff;
+}
+
+/* Responsive Ads Section */
+.ads-section {
+    padding: 25px 0;
+    border-bottom: 1px solid #6a1b9a;
+    text-align: center;
+    background: #3b1173;
+}
+
+.ads-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.ads-title {
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.ads-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ad-unit {
+    flex: 1 1 300px;
+    min-height: 100px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    transition: all 0.3s ease;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.ad-unit:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ad-unit img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ad-unit.horizontal {
+    flex: 2 1 650px;
+}
+
+.ad-badge {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+/* RTL adjustments */
+html[dir="rtl"] .ad-badge {
+    right: auto;
+    left: 5px;
+}
+
+@media (max-width: 768px) {
+    .ad-unit.horizontal {
+        flex: 1 1 300px;
+    }
+}
+
+/* Footer Bottom Section */
+.footer-bottom-section {
+    padding: 15px 0;
+    background: #38106d;
+}
+
+.footer-bottom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    max-width: 180px;
+    height: auto;
+}
+
+.footer-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.social-follow {
+    display: flex;
+    align-items: center;
+}
+
+.social-follow-text {
+    margin-right: 15px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icon {
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    background: #444;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.social-icon:hover {
+    background: #666;
+}
+
+.social-icon i {
+    color: #fff;
+    font-size: 16px;
+}
+
+.newsletter-signup {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-text {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.newsletter-buttons {
+    display: flex;
+}
+
+.newsletter-button {
+    margin: 0 5px;
+    padding: 8px 15px;
+    background: #8b0000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter-button:hover {
+    background: #a00000;
+}
+
+.copyright-section {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #777;
+}
+
+.copyright-section a {
+    color: #999;
+    text-decoration: none;
+}
+
+.copyright-section a:hover {
+    color: #fff;
+}
+
+.address-section {
+    width: 100%;
+    text-align: right;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #777;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 40px 0;
+    background: #03DAC6;
+    border-bottom: 1px solid #018786;
+    color: #fff;
+}
+
+.faq-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.faq-title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: 700;
+}
+
+.faq-subtitle {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 20px;
+}
+
+.faq-item {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.faq-item:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+.faq-toggle {
+    font-size: 20px;
+    color: #018786;
+    transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(45deg);
+    color: #000;
+}
+
+.faq-answer {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    padding: 15px 20px;
+    max-height: 500px;
+}
+
+.faq-answer p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .faq-title {
+        font-size: 24px;
+    }
+    
+    .faq-subtitle {
+        font-size: 14px;
+    }
+}
+
+/* RTL Adjustments */
+html[dir="rtl"] .site-links-column ul li {
+    text-align: right;
+}
+
+html[dir="rtl"] .social-follow-text {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+html[dir="rtl"] .newsletter-text {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+html[dir="rtl"] .address-section {
+    text-align: left;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .site-links-container,
+    .partners-container,
+    .footer-bottom-container {
+        flex-direction: column;
+    }
+    
+    .site-links-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .footer-bottom-container {
+        text-align: center;
+    }
+    
+    .social-follow,
+    .newsletter-signup {
+        margin: 15px 0;
+        justify-content: center;
+    }
+    
+    .address-section {
+        text-align: center;
+    }
+}

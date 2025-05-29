@@ -1,0 +1,34 @@
+User-agent: *
+Allow: /
+Sitemap: https://darlma3rifa.com/sitemap.xml
+
+# Allow all bots full access
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+User-agent: Yandex
+Allow: /
+Crawl-delay: 1
+
+# Disallow access to specific files or directories if needed
+# Disallow: /private/
+# Disallow: /temp/

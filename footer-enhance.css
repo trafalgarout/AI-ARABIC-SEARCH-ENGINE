@@ -1,0 +1,270 @@
+/* Casino-style Footer Styling */
+
+.footer {
+    position: relative;
+    background: #231f20;
+    color: #fff;
+    overflow: hidden;
+    z-index: 1;
+    padding: 30px 0 0;
+    font-family: 'Amiri', Arial, sans-serif;
+}
+
+/* Professional footer styling */
+.footer-logo-section {
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px;
+}
+
+.footer-logo-container {
+    display: inline-block;
+}
+
+.footer-logo {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.footer-site-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 5px;
+    color: #fff;
+}
+
+.footer-tagline {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+.footer-content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    position: relative;
+    z-index: 2;
+    flex: 1 1 250px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+/* Enhanced section styling */
+.footer-section h3 {
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    width: 40px;
+    height: 3px;
+    background: rgba(255,255,255,0.3);
+    transition: width 0.3s ease;
+}
+
+.footer-section:hover h3::after {
+    width: 100%;
+}
+
+/* Footer bottom styling */
+.footer-bottom {
+    background: rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-domain {
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.domain-link {
+    color: #4facfe !important;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.domain-link:hover {
+    color: #fff !important;
+    text-decoration: underline;
+}
+
+/* Enhanced link styling */
+.footer-section a, .footer-bottom-links a {
+    color: rgba(255,255,255,0.8);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.footer-section a:hover, .footer-bottom-links a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(255,255,255,0.3);
+}
+
+.footer-section.links a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    width: 0;
+    height: 1px;
+    background: #fff;
+    transition: width 0.3s ease;
+}
+
+.footer-section.links a:hover::before {
+    width: 100%;
+}
+
+/* Social icons enhancement */
+.socials a {
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.socials a:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-3px);
+}
+
+/* Newsletter form enhancement */
+.newsletter-form {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.newsletter-input {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    padding: 12px 20px;
+    color: #fff;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.newsletter-input::placeholder {
+    color: rgba(255,255,255,0.6);
+}
+
+.newsletter-btn {
+    background: linear-gradient(to right, #ff8a00, #e52e71);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newsletter-btn:hover {
+    background: linear-gradient(to right, #e52e71, #ff8a00);
+    box-shadow: 0 0 10px rgba(229, 46, 113, 0.5);
+}
+
+/* Tags styling */
+.tags .tag {
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 5px 12px;
+    margin: 5px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.tags .tag:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-3px);
+}
+
+/* Animation for floating elements */
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+/* RTL specific adjustments */
+html[dir="rtl"] .footer-section h3::after {
+    right: 0;
+    left: auto;
+}
+
+html[dir="rtl"] .footer-section.links a::before {
+    right: 0;
+    left: auto;
+}
+
+html[dir="rtl"] .newsletter-btn {
+    right: auto;
+    left: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-content::before,
+    .footer-content::after {
+        display: none;
+    }
+    
+    .newsletter-btn {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
